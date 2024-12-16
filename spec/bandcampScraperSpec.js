@@ -121,6 +121,7 @@ describe('bandcamp-scraper', function () {
           if (albumUrls) console.log('albumUrls', albumUrls)
           expect(error).toBeNull()
           expect(Array.isArray(albumUrls)).toBe(true)
+          expect(albumUrls.every((a) => !!a.title)).toBe(true)
           expect(albumUrls.length).toBeGreaterThan(0)
           done()
           // TODO validate with JSON schema
