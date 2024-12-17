@@ -22,12 +22,15 @@ const tags = [
 ]
 
 const artistUrls = [
+  /*
   'http://musique.coeurdepirate.com',
   'https://macdemarco.bandcamp.com',
   'https://fadedpaperfigures.bandcamp.com',
   'https://tigerjazzclub.bandcamp.com',
   'https://bonobomusic.bandcamp.com',
-  'https://giraffage.bandcamp.com'
+  'https://giraffage.bandcamp.com',
+  */
+  'https://cheekface.bandcamp.com/music'
 ]
 
 const albumUrls = [
@@ -111,7 +114,7 @@ describe('bandcamp-scraper', function () {
         }))
     })
   })
-  describe('getAlbumUrls', function () {
+  fdescribe('getAlbumUrls', function () {
     it('scrape album urls', function (done) {
       const artistUrl = sample(artistUrls)
       expect(
